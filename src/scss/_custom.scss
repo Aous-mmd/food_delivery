@@ -1,0 +1,119 @@
+// Here you can add other styles
+.items {
+    padding: 1px;
+    .conts {
+        background: $white;
+        padding: 15px;
+        height: 86vh;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+            background: $grey;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $black;
+        }
+        h1 {
+            margin: 0;
+        }
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        .btn {
+            font-size: 9px;
+        }
+    }
+}
+.item {
+    border-radius: 0;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: $platinum;
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    align-items: center;
+    &.food {
+        grid-template-columns: 70% 30%;
+    }
+    .img {
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .content {
+        padding: 0 15px;
+    }
+    .action {
+        display: flex;
+        justify-content: space-between;
+        svg:hover {
+            cursor: pointer;
+        }
+    }
+}
+.spinner-border {
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
+}
+
+h1 {
+    font-size: 1em;
+}
+.accordion__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.empty {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .spinner-border {
+        width: 6em;
+        height: 6em;
+    }
+}
+
+.table_address {
+    background: $white;
+    border-radius: 15px;
+    padding: 15px;
+    min-height: 60vh;
+    .btn-danger {
+        margin-right: auto;
+    }
+    .empty {
+        min-height: 60vh;
+    }
+}
+
+.info {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 80vh;
+}
+
+.slider_img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+.action_op {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
